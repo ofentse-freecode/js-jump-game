@@ -1,0 +1,25 @@
+/*game conatainer styles*/
+.game{
+    width: 600px;
+    height: 200px;
+    border: 1px solid  black;
+    margin: auto;
+}
+/*styles for cactus*/
+.cactus{
+    width: 20px;
+    height: 40px;
+    position: relative;
+    top: 160px;
+    left: 580px;
+     background-color: black; 
+    /* animation: block 1s infinite linear; */
+}
+@keyframes block {
+    0%{
+        left: 580px;
+    }
+    100%{
+        left: -20px;
+    }
+}

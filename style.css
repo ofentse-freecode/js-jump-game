@@ -10,12 +10,13 @@
     width: 20px;
     height: 40px;
     position: relative;
-    top: 160px;
+    top: 158px;
     left: 580px;
-     background-color: black; 
-    /* animation: block 1s infinite linear; */
+    background-image: url('./images/cactus\ \(1\).png');
+    background-size: 20px 40px; 
+    animation:  move 1s infinite linear; 
 }
-@keyframes block {
+@keyframes move {
     0%{
         left: 580px;
     }

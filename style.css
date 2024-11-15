@@ -21,10 +21,12 @@
     width: 20px;
     height: 40px;
     position: relative;
-    top: 228px;
+    top: 238px;
     left: 580px;
     background-image: url('./images/cactus\ \(1\).png');
     background-size: 20px 40px; 
+}
+.move{
     animation:  move 1s infinite linear; 
 }
 @keyframes move {

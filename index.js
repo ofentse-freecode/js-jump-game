@@ -17,3 +17,28 @@ let isAlive = setInterval(function () {
 
 
 //(3) Add event listener to allow user to play game
+
+
+const dino = document.querySelector('.dino');
+const cactus = document.querySelector('.cactus');
+const game = document.querySelector('.game');
+
+let isJumping = false;
+let score = 0;
+
+document.addEventListener('keydown', (event) => {
+  if (event.code === 'Space' && !isJumping) {
+    jump();
+  }
+});
+
+function jump() {
+  isJumping = true;
+  dino.style.animation = 'jump 0.5s ease-out forwards';
+
+  setTimeout(() => {
+    dino.style.animation = '';
+    isJumping = false;
+  }, 500); 
+}
+

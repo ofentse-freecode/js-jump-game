@@ -1,4 +1,4 @@
-/*game conatainer styles*/
+/* /*game conatainer styles*/
 .game{
     width: 600px;
     height: 100%;
@@ -15,8 +15,9 @@
     justify-content: center;
     align-items:center;
     min-height: 40vh;
-}
+} 
 /*styles for cactus*/
+
 .cactus{
     width: 20px;
     height: 40px;
@@ -25,6 +26,7 @@
     left: 580px;
     background-image: url('./images/cactus\ \(1\).png');
     background-size: 20px 40px; 
+    background-repeat: no-repeat;
 }
 .move{
     animation:  move 1s infinite linear; 
@@ -71,4 +73,18 @@
     background-color: rgba(255, 255, 255, 0.7);
     padding: 5px 10px;
     border-radius: 5px;
+  } 
+  @media (max-width: 1024px) {
+    .game{
+        width: 550px;
+        height: 100%;
+    }
+    .ground{
+        min-height: 0vh;
+    } 
+    .cactus{
+        width: 20px;
+        height: 90px;
+       
+    }
   }

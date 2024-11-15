@@ -1,19 +1,27 @@
 /*game conatainer styles*/
 .game{
     width: 600px;
-    height: 200px;
+    height: 100%;
     border: 1px solid  black;
     margin: auto;
-    background-color: #e2e2e2;
+    background-color: #fafafa;
     overflow: hidden;
     position: relative;
+}
+.ground{
+    padding:0;
+    margin:0;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    min-height: 40vh;
 }
 /*styles for cactus*/
 .cactus{
     width: 20px;
     height: 40px;
     position: relative;
-    top: 158px;
+    top: 228px;
     left: 580px;
     background-image: url('./images/cactus\ \(1\).png');
     background-size: 20px 40px; 

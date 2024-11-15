@@ -42,3 +42,32 @@ function jump() {
   }, 500); 
 }
 
+function moveCactus() {
+  const cactusRect = cactus.getBoundingClientRect();
+  const dinoRect = dino.getBoundingClientRect();
+
+  if (
+    cactusRect.right > dinoRect.left &&
+    cactusRect.left < dinoRect.right &&
+    cactusRect.bottom > dinoRect.top &&
+    cactusRect.top < dinoRect.bottom
+  ) {
+    alert('Game Over! Final Score: ' + score);
+    location.reload(); 
+  }
+
+  if (cactusRect.right <= 0) {
+    score++;
+    cactus.style.animation = 'none'; 
+    cactus.style.right = '-30px'; 
+    cactus.style.animation = 'moveCactus 2s linear infinite'; 
+  }
+}
+
+setInterval(() => {
+  moveCactus();
+}, 20);
+
+setInterval(() => {
+  console.log('Score: ' + score);
+}, 1000);

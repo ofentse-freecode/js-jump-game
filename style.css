@@ -90,6 +90,22 @@
         left: 720px;
     }
   }
+  @media (max-width: 1440px) {
+    .game{
+        width: 850px;
+        height: 100%;
+    }
+    .ground{
+        min-height: 0vh;
+        width: 100%;
+    } 
+    .cactus{
+        width: 40px;
+        height: 90px;
+        top: 278px;
+        left: 720px;
+    }
+  }
   @media (max-width: 1024px) {
     .game{
         width: 550px;

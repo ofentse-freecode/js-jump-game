@@ -74,6 +74,22 @@
     padding: 5px 10px;
     border-radius: 5px;
   } 
+  @media (max-width: 2560px) {
+    .game{
+        width: 850px;
+        height: 100%;
+    }
+    .ground{
+        min-height: 0vh;
+        width: 100%;
+    } 
+    .cactus{
+        width: 40px;
+        height: 90px;
+        top: 360px;
+        left: 820px;
+    }
+  }
   @media (max-width: 1024px) {
     .game{
         width: 550px;
@@ -85,6 +101,7 @@
     .cactus{
         width: 20px;
         height: 90px;
-       
+        top: 258px;
+        left: 580px;
     }
   }

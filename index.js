@@ -1,3 +1,5 @@
+
+
 const dino = document.querySelector('.dino');
 const cactus = document.querySelector('.cactus');
 const game = document.querySelector('.game');
@@ -83,4 +85,3 @@ setInterval(() => {
 setInterval(() => {
   console.log('Score: ' + score);
 }, 1000);
-

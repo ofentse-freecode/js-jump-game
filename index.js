@@ -76,21 +76,6 @@ function onTouchStart(event){
 setupInputListners();
 window.addEventListener("resize", setupInputListners)
 
-/* document.addEventListener('keydown', (event) => {
-  if(event.code === "Space"){
-    if(!gamestarted){
-      gamestarted = true;
-      if(!cactus.classList.contains("move")){
-        cactus.classList.add("move")
-      }
-    }
-  }
-  if ( !isJumping) {
-    jump();
-  }
-}); */
-
-
 setInterval(() => {
   moveCactus();
 }, 20);

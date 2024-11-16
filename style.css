@@ -21,9 +21,10 @@
 .cactus{
     width: 20px;
     height: 40px;
-    position: relative;
-    top: 238px;
+    position: absolute;
+    top: 140px;
     left: 580px;
+    bottom: 0px;
     background-image: url('./images/cactus\ \(1\).png');
     background-size: 20px 40px; 
     background-repeat: no-repeat;

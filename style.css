@@ -22,9 +22,9 @@
     width: 20px;
     height: 40px;
     position: absolute;
-    top: 140px;
+    top: 180px;
     left: 580px;
-    bottom: 0px;
+    bottom: 10px;
     background-image: url('./images/cactus\ \(1\).png');
     background-size: 20px 40px; 
     background-repeat: no-repeat;

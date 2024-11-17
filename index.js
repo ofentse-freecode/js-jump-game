@@ -39,39 +39,25 @@ function moveCactus() {
   }
 }
 function setupInputListners(){
-  if(window.innerWidth > 768){
     document.removeEventListener("touchstart", onTouchStart);
     document.addEventListener("keydown", onkeyDown);
-  } else {
-    document.removeEventListener("keydown", onkeyDown);
-    document.addEventListener("touchstart", onTouchStart);
-  }
 }
 function onkeyDown(event){
   if(event.code === "Space"){
     if(!gamestarted){
       gamestarted = true;
-      if(!cactus.classList.contains("move")){
         cactus.classList.add("move")
-      }
     }
   }
-  if ( !isJumping) {
     jump();
-  }
 }
 
 function onTouchStart(event){
-  if(!gamestarted){
     gamestarted = true;
-    if(!cactus.classList.contains("move")){
       cactus.classList.add("move")
-    }
-  }
   jump()
 }
 setupInputListners();
-window.addEventListener("resize", setupInputListners)
 
 setInterval(() => {
   moveCactus();

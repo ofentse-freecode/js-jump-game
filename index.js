@@ -6,6 +6,19 @@ let gamestarted = false;
 let isJumping = false;
 let score = 0;
 
+
+function randomCacti() {
+  const cacti = [
+    'images/cactus (1).png',
+    'images/cactus (2).png',
+    'images/cactus (3).png'
+  ];
+  const numberOfCacti = Math.floor(Math.random() * cacti) + 1;
+}
+
+
+
+
 function jump() {
   if (!isJumping) {
     isJumping = true;

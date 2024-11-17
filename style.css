@@ -1,6 +1,6 @@
 .game {
-    width: 600px;
-    height: 100%;
+    width: 900px !important;
+    height: 100% !important;
     border: 1px solid black;
     margin: auto;
     background-color: #fafafa;
@@ -14,20 +14,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 40vh;
+    /* min-height: 0vh; */
+    width: 100%;
   }
   
-  /* Cactus Styles */
+
   .cactus {
-    width: 20px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     position: absolute;
-    top: 200px;
-    left: 550px;
+    top: 290px;
+    /* left: 550px; */
     bottom: 0;
     background-image: url('./images/cactus\ \(1\).png');
-    background-size: 20px 40px; 
+    background-size: contain; 
     background-repeat: no-repeat;
+    right: -10px;
   }
   
   .move {
@@ -43,7 +45,7 @@
     }
   }
   
-  /* Dino Styles */
+
   .dino {
     width: 50px;
     height: 40px;
@@ -85,7 +87,7 @@
   }
   
   /* Responsive Styles */
-  @media (max-width: 2560px) {
+  /* @media (max-width: 2560px) {
     .game {
       width: 850px;
       height: 100%;
@@ -140,4 +142,31 @@
       left: 580px;
     }
   }
-  
+   */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

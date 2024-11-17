@@ -1,46 +1,50 @@
-.game{
+.game {
     width: 600px;
     height: 100%;
-    border: 1px solid  black;
+    border: 1px solid black;
     margin: auto;
     background-color: #fafafa;
     overflow: hidden;
     position: relative;
-}
-.ground{
-    padding:0;
-    margin:0;
-    display:flex;
+  }
+  
+  .ground {
+    padding: 0;
+    margin: 0;
+    display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     min-height: 40vh;
-} 
-/*styles for cactus*/
-
-.cactus{
+  }
+  
+  /* Cactus Styles */
+  .cactus {
     width: 20px;
     height: 40px;
     position: absolute;
     top: 200px;
     left: 550px;
-    bottom: 0px;
+    bottom: 0;
     background-image: url('./images/cactus\ \(1\).png');
     background-size: 20px 40px; 
     background-repeat: no-repeat;
-}
-.move{
-    animation:  move 1s infinite linear; 
-}
-@keyframes move {
-    0%{
-        left: 580px;
+  }
+  
+  .move {
+    animation: move 1s infinite linear;
+  }
+  
+  @keyframes move {
+    0% {
+      left: 580px;
     }
-    100%{
-        left: -20px;
+    100% {
+      left: -20px;
     }
-}
-
-.dino {
+  }
+  
+  /* Dino Styles */
+  .dino {
     width: 50px;
     height: 40px;
     background-image: url('./images/dino.png');
@@ -50,20 +54,25 @@
     bottom: 0;
     left: 50px;
     border-radius: 5px;
-}
-
-@keyframes jump {
+  }
+  
+  .jump {
+    animation: jump 0.5s ease-out forwards;
+  }
+  
+  @keyframes jump {
     0% {
-        bottom: 0;
+      bottom: 0;
     }
     50% {
-        bottom: 120px; 
+      bottom: 120px; 
     }
     100% {
-        bottom: 0;
+      bottom: 0;
     }
-}
-#score-display {
+  }
+  
+  #score-display {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -73,51 +82,62 @@
     background-color: rgba(255, 255, 255, 0.7);
     padding: 5px 10px;
     border-radius: 5px;
-  } 
+  }
+  
+  /* Responsive Styles */
   @media (max-width: 2560px) {
-    .game{
-        width: 850px;
-        height: 100%;
+    .game {
+      width: 850px;
+      height: 100%;
     }
-    .ground{
-        min-height: 0vh;
-        width: 100%;
-    } 
-    .cactus{
-        width: 40px;
-        height: 90px;
-        top: 278px;
-        left: 720px;
+  
+    .ground {
+      min-height: 0vh;
+      width: 100%;
+    }
+  
+    .cactus {
+      width: 40px;
+      height: 90px;
+      top: 278px;
+      left: 720px;
     }
   }
+  
   @media (max-width: 1440px) {
-    .game{
-        width: 850px;
-        height: 100%;
+    .game {
+      width: 850px;
+      height: 100%;
     }
-    .ground{
-        min-height: 0vh;
-        width: 100%;
-    } 
-    .cactus{
-        width: 40px;
-        height: 90px;
-        top: 278px;
-        left: 720px;
+  
+    .ground {
+      min-height: 0vh;
+      width: 100%;
+    }
+  
+    .cactus {
+      width: 40px;
+      height: 90px;
+      top: 278px;
+      left: 720px;
     }
   }
+  
   @media (max-width: 1024px) {
-    .game{
-        width: 550px;
-        height: 100%;
+    .game {
+      width: 550px;
+      height: 100%;
     }
-    .ground{
-        min-height: 0vh;
-    } 
-    .cactus{
-        width: 20px;
-        height: 90px;
-        top: 158px;
-        left: 580px;
+  
+    .ground {
+      min-height: 0vh;
+    }
+  
+    .cactus {
+      width: 20px;
+      height: 90px;
+      top: 158px;
+      left: 580px;
     }
   }
+  
